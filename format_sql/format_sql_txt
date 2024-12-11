@@ -1,0 +1,6 @@
+select WmsEntry.GeneralName+'_批次-'+WmsEntry.BatchNo+'_装箱比率-'+WmsEntry.TagRatio fName from T_QR_TaskBill
+ inner join T_QR_TaskBillProduct on T_QR_TaskBill.fID = T_QR_TaskBillProduct.fParentid
+ inner join T_QR_TaskBillProductCode on T_QR_TaskBillProduct.fID = T_QR_TaskBillProductCode.fParentid
+ inner join WmsEntryDtl on T_QR_TaskBillProductCode.Code = WmsEntryDtl.Code
+ inner join WmsEntry on WmsEntryDtl.TaskNo = WmsEntry.TaskNo
+ where T_QR_TaskBill.ftasknumber = 'MJL-D_ZB-2021-052631-SCM'
