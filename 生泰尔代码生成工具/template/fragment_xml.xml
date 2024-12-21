@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.monkeyk.centre.view.searchview.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:searchBlockColor="#ffffff"
+        app:searchBlockHeight="120"
+        app:textColorSearch="#9b9b9b"
+        app:textHintSearch="输入查询关键字"
+        app:textSizeSearch="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.monkeyk.ht.pulltorefreshView.PullToRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pull_freshlayout_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/pull_refresh_head" />     <!--支持所有实现Pullable接口的View-->
+            <com.monkeyk.ht.pulltorefreshView.PullableListView
+                android:id="@+id/pull_freshlayout_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:cacheColorHint="@color/result_view_transparent"
+                android:divider="@color/common_fenge_color"
+                android:dividerHeight="2px"
+                android:listSelector="@color/result_view_transparent"
+                android:scrollbars="none" />
+
+            <include layout="@layout/pull_load_more" />
+        </com.monkeyk.ht.pulltorefreshView.PullToRefreshLayout>
+    </LinearLayout>
+
+    <include layout="@layout/base_not_found_info" />
+</LinearLayout>

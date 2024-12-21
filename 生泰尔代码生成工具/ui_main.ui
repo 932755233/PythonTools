@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>856</width>
+    <height>1016</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>生成工具</string>
+  </property>
+  <widget class="QPushButton" name="but_start">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>960</y>
+     <width>240</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始生成</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>50</y>
+     <width>110</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="pbut_listAndMainBean_add">
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pbut_listAndMainBean_remove">
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>290</y>
+     <width>150</width>
+     <height>180</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QCheckBox" name="cb_picture">
+      <property name="text">
+       <string>图片附件</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="cb_examine">
+      <property name="text">
+       <string>审核</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="cb_annotation">
+      <property name="text">
+       <string>注释</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="tw_listAndMainBean">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>100</y>
+     <width>580</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>显示名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>变量名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>显示类型</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>列表位置序号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>详情位置序号</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="tw_listLineName">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>241</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+   <row/>
+   <row/>
+   <column>
+    <property name="text">
+     <string>列显示名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>列Fragment中缀</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>待提交</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>Approval</string>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>已处理</string>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="text">
+     <string>Processed</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>50</y>
+     <width>110</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QPushButton" name="pbut_listLineName_add">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pbut_listLineName_remove">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="tw_entryBean">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>520</y>
+     <width>580</width>
+     <height>380</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>显示名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>变量名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>显示类型</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>显示位置序号</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>470</y>
+     <width>120</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QPushButton" name="but_entryBean_add">
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="but_entryBean_remove">
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>70</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>详情数据</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>490</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>分录数据</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>类名前缀：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="edit_className">
+      <property name="placeholderText">
+       <string>请输入类名前缀，例：MettePurRequestBill</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>259</x>
+     <y>920</y>
+     <width>581</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLineEdit" name="edit_outPath">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="but_selectOutPath">
+      <property name="text">
+       <string>选择输出路径</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainT_output">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>240</width>
+     <height>480</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>490</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>日志输出</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="but_resetAll">
+   <property name="geometry">
+    <rect>
+     <x>489</x>
+     <y>960</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>清理</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>20</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>单据名称：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="edit_className_2">
+      <property name="placeholderText">
+       <string>请输入单据名称，例：招待费申请单</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>edit_className</tabstop>
+  <tabstop>edit_className_2</tabstop>
+  <tabstop>pbut_listAndMainBean_add</tabstop>
+  <tabstop>pbut_listAndMainBean_remove</tabstop>
+  <tabstop>tw_listAndMainBean</tabstop>
+  <tabstop>but_entryBean_add</tabstop>
+  <tabstop>but_entryBean_remove</tabstop>
+  <tabstop>tw_entryBean</tabstop>
+  <tabstop>cb_picture</tabstop>
+  <tabstop>cb_examine</tabstop>
+  <tabstop>cb_annotation</tabstop>
+  <tabstop>but_selectOutPath</tabstop>
+  <tabstop>edit_outPath</tabstop>
+  <tabstop>but_start</tabstop>
+  <tabstop>but_resetAll</tabstop>
+  <tabstop>pbut_listLineName_add</tabstop>
+  <tabstop>pbut_listLineName_remove</tabstop>
+  <tabstop>tw_listLineName</tabstop>
+  <tabstop>plainT_output</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
