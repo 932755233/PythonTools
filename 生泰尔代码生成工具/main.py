@@ -250,7 +250,11 @@ class MainWindow(QMainWindow):
 
         # Fragment的Adapter的xml
         generateFragmentAdapterXml = GenerateFragmentAdapterXml(self.classNamePrefix, self.beanList)
+
+
         fragmentAdapterXmlFileName, fragmentAdapterXmlContent = generateFragmentAdapterXml.getResult()
+
+
         # 列表adapter的xml文件
         FileCreateTool.generateFile(
             r'%s\xml\%s.xml' % (androidSavePath, fragmentAdapterXmlFileName),
